@@ -27,10 +27,10 @@ const MovieCard: React.FC = () => {
               </h1>
             </div>
             <div className="flex items-center gap-[18px] mb-2 text-sm text-gray-300 ">
-              <span>2021</span>
-              <span className="px-[15px] gradient-border text-white">18+</span>
-              <span>4h 2min</span>
-              <span>⭐ 8.8</span>
+              <span className="font-mulish">2021</span>
+              <span className="px-[15px] gradient-border font-mulish text-white">18+</span>
+              <span className="font-mulish">4h 2min</span>
+              <span className="font-mulish">⭐ 8.8</span>
             </div>
             <p className="xl:w-[63%] text-accent-200 text-sm mb-6 font-mulish font-regular">
               Determined to ensure Superman's ultimate sacrifice was not in
@@ -41,7 +41,7 @@ const MovieCard: React.FC = () => {
             <div className="flex flex-col lg:flex-row gap-4">
               <a
                 onClick={() => setIsOpen(true)}
-                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground h-10 py-2 hover:bg-gradient-to-bl bg-gradient-to-br from-[#326cff]  to-[#26FFF2]  rounded-full px-8 scroll-smooth">
+                className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 text-primary-foreground h-10 py-2 hover:bg-gradient-to-bl bg-gradient-to-br from-[#326cff]  to-[#26FFF2]  rounded-full px-8 scroll-smooth font-mulish">
                 <svg
                   width="14"
                   height="18"
@@ -55,7 +55,7 @@ const MovieCard: React.FC = () => {
                 </svg>
                 Watch
               </a>
-              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors duration-300 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-white hover:bg-white/50  h-10 py-2 rounded-full px-8 border-white hover:bg-white/50 text-accent-100 !rounded-full">
+              <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring transition-colors duration-300 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border bg-white hover:bg-white/50  h-10 py-2 rounded-full px-8 border-white hover:bg-white/50 text-accent-100 !rounded-full font-mulish">
                 More information
               </button>
             </div>
