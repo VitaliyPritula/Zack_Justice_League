@@ -4,13 +4,22 @@ const fs = require("fs");
 const path = require("path");
 
 (async () => {
-  const files = await fg(["src/**/*.{jpg,jpeg,png}"]);
+  // Шукаємо зображення і в src/, і в public/
+  const files = await fg(["src/**/*.{jpg,jpeg,png}", "public/**/*.{jpg,jpeg,png}"]);
 
-  await Promise.all(files.map(async (file) => {
-    const output = file.replace(/\.(jpg|jpeg|png)$/, ".webp");
-    await sharp(file)
-      .webp({ quality: 80 })
-      .toFile(output);
-    console.log(`✅ Converted: ${file} → ${output}`);
-  }));
+  await Promise.all(
+    files.map(async (file) => {
+      const ext = path.extname(file);
+      const output = file.replace(ext, ".webp");
+
+      // Пропускаємо, якщо webp вже існує
+      if (fs.existsSync(output)) return;
+
+      await sharp(file)
+        .webp({ quality: 80 })
+        .toFile(output);
+
+      console.log(`✅ Converted: ${file} → ${output}`);
+    })
+  );
 })();
