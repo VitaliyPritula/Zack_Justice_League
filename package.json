@@ -10,7 +10,7 @@
     "preview": "vite preview",
       "convert:webp": "node convert-to-webp.js",
     "replace:imports": "node replace-imports.js",
-    "prebuild": "npm run convert:webp && npm run replace:imports",
+    "prebuild": "npm run convert:webp && npm run replace:imports"
   },
   "dependencies": {
     "@react-three/drei": "^10.3.0",
