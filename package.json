@@ -8,8 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-      "convert:webp": "node convert-to-webp.js",
-    "replace:imports": "node replace-imports.js",
+      "convert:webp": "node convert-to-webp.cjs",
+    "replace:imports": "node replace-imports.cjs",
     "prebuild": "npm run convert:webp && npm run replace:imports"
   },
   "dependencies": {

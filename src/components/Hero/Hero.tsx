@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import image from "/Hero_img.jpg";
+import image from "/Hero_img.webp";
 import "./style.css"; // Assuming you have some styles in Hero.css
 const MovieCard: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
