@@ -1,4 +1,6 @@
-
+.title{
+  font-size: calc(35px + (62 - 20) * ((100vw - 320px) / (1441 - 320)));
+}
 
 
 .gradient-border {
