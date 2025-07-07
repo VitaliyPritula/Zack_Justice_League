@@ -9,22 +9,22 @@ import Hero from "./components/Hero/Hero";
 import { Tvshows } from "./components/Tvshows";
 
 const trendingTVShows = [
-  { id: 1,  image: "/public/Shows/01.jpg" },
-  { id: 2, image: "/public/Shows/02.jpg" },
-  { id: 3, image: "/public/Shows/03.jpg" },
-  { id: 4, image: "/public/Shows/04.jpg" },
-  { id: 5, image: "/public/Shows/05.jpg" },
-  { id: 6, image: "/public/Shows/06.jpg" },
-  { id: 7, image: "/public/Shows/07.jpg" },
+  { id: 1,  image: "/Shows/01.jpg" },
+  { id: 2, image: "/Shows/02.jpg" },
+  { id: 3, image: "/Shows/03.jpg" },
+  { id: 4, image: "/Shows/04.jpg" },
+  { id: 5, image: "/Shows/05.jpg" },
+  { id: 6, image: "/Shows/06.jpg" },
+  { id: 7, image: "/Shows/07.jpg" },
 ];
 const trendingMovies = [
-  { id: 8, image: "/public/Shows/08.jpg" },
-  { id: 9, image: "/public/Shows/09.jpg" },
-  { id: 10, image: "/public/Shows/10.jpg" },
-  { id: 11, image: "/public/Shows/11.jpg" },
-  { id: 12, image: "/public/Shows/12.jpg" },
-  { id: 13, image: "/public/Shows/10.jpg" },
-  { id: 14, image: "/public/Shows/08.jpg" },
+  { id: 8, image: "/Shows/08.jpg" },
+  { id: 9, image: "/Shows/09.jpg" },
+  { id: 10, image: "/Shows/10.jpg" },
+  { id: 11, image: "/Shows/11.jpg" },
+  { id: 12, image: "/Shows/12.jpg" },
+  { id: 13, image: "/Shows/10.jpg" },
+  { id: 14, image: "/Shows/08.jpg" },
 ];
 function App() {
   return (

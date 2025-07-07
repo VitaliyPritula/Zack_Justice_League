@@ -5,7 +5,7 @@ const movies = [
   {
     id: 1,
     title: "After",
-    image: "/public/Shows/01.jpg",
+    image: "/Shows/01.jpg",
     description:
       "Tessa Young is a dedicated student and loyal daughter with a simple life. Her world turns upside down when she meets mysterious rebel Hardin Scott.",
     details: {
@@ -48,7 +48,7 @@ const movies = [
   {
     id: 2,
     title: "Emancipation",
-    image: "/public/Shows/02.jpg",
+    image: "/Shows/02.jpg",
     description:
       "Emancipation is a 2022 American historical action thriller film directed by Antoine Fuqua, written by William N. Collage, and produced by Will Smith. Will Smith stars as a fugitive slave who travels to Baton Rouge, Louisiana, in the 1860s after President Abraham Lincoln issues the Emancipation Proclamation to end slavery in the secessionist Confederacy. Will Smith's character survives in the swamps, pursued by slave catchers and their dogs. Ben Foster plays the ruthless slave hunter, and Charmaine Bingwa plays his enslaved wife and mother. The film is loosely based on the life of a self-emancipated a slave known as either Gordon or  The story became famous after a photograph of the man's bare back, badly beaten by a overseer, was published as a magazine illustration in 1863 and became evidence of the cruelty of slavery for the abolitionist movement. Producer Joey McFarland began researching the story in 2018 and hired Collage to write the screenplay.The film was officially announced in June 2020, with Fuqua attached to direct and Smith to star. Filming took place in Louisiana from July to August 2021, and Apple paid $130 million to acquire the rights to the film, beating out several other studios.It premiered in Washington, D.C., on October 1, 2022. The film was released in select in theaters on December 2 of that year, and then streamed on December 9 on Apple TV+. The film received mixed reviews from critics, who praised Smith's performance but criticized the script and its depiction of real events.",
     details: {
@@ -80,7 +80,7 @@ const movies = [
   {
     id: 3,
     title: "Dunkirk",
-    image: "/public/Shows/03.jpg",
+    image: "/Shows/03.jpg",
     description:
       "Allied soldiers from Belgium, the British Empire and France are surrounded by the German Army and evacuated during a fierce battle in World War II.",
     details: {
@@ -117,7 +117,7 @@ const movies = [
   {
     id: 4,
     title: "The Enormity of Life",
-    image: "/public/Shows/04.jpg",
+    image: "/Shows/04.jpg",
     description:
       "After a failed suicide attempt, a man unexpectedly finds love, meaning, and a reason to live in an unlikely friendship.",
     details: {
@@ -145,7 +145,7 @@ const movies = [
   {
     id: 5,
     title: "Vanitas",
-    image: "/public/Shows/05.jpg",
+    image: "/Shows/05.jpg",
     description:
       "A painter obsessed with immortality explores dark forces through his art, unleashing something unexpected.",
     details: {
@@ -173,7 +173,7 @@ const movies = [
   {
     id: 6,
     title: "Something Like Perfect",
-    image: "/public/Shows/06.jpg",
+    image: "/Shows/06.jpg",
     description:
       "A burnt-out writer escapes to the coast, only to rediscover inspiration through unexpected relationships.",
     details: {
@@ -201,7 +201,7 @@ const movies = [
   {
     id: 7,
     title: "Maturing Youth",
-    image: "/public/Shows/07.jpg",
+    image: "/Shows/07.jpg",
     description:
       "An immature young man is forced to grow up fast when his girlfriend drops a surprise responsibility on him: a child he didn’t know he had.",
     details: {
@@ -229,7 +229,7 @@ const movies = [
   {
     id: 8,
     title: "Leap Year",
-    image: "/public/Shows/08.jpg",
+    image: "/Shows/08.jpg",
     description:
       "A woman travels to Ireland to propose to her boyfriend on Leap Day, but fate has other romantic plans.",
     details: {
@@ -257,7 +257,7 @@ const movies = [
   {
     id: 9,
     title: "The Curse of Oak Island",
-    image: "/public/Shows/09.jpg",
+    image: "/Shows/09.jpg",
     description:
       "Brothers Rick and Marty Lagina embark on a quest to solve the 220-year-old mystery of Oak Island and find the legendary treasure.",
     details: {
@@ -288,7 +288,7 @@ const movies = [
   {
     id: 10,
     title: "Street Legal",
-    image: "/public/Shows/10.jpg",
+    image: "/Shows/10.jpg",
     description:
       "A modern reboot of the classic Canadian courtroom drama that follows ambitious lawyers navigating high-stakes cases and personal turmoil.",
     details: {
@@ -316,7 +316,7 @@ const movies = [
   {
     id: 11,
     title: "Run Baby Run",
-    image: "/public/Shows/11.jpg",
+    image: "/Shows/11.jpg",
     description:
       "A simple evening turns into a nightmare when a man finds himself entangled in a murder conspiracy.",
     details: {
@@ -347,7 +347,7 @@ const movies = [
   {
     id: 12,
     title: "The Black Echo",
-    image: "/public/Shows/12.jpg",
+    image: "/Shows/12.jpg",
     description:
       "Based on Michael Connelly’s bestselling novel, Detective Bosch investigates a murder with ties to his traumatic past in Vietnam.",
     details: {
