@@ -1,17 +1,51 @@
-import React from "react";
+"use strict";
+// import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { MoviePage } from "./pages/MoviePage";
+
 import "./index.css";
 import { Header } from "./components/layout/header";
 import Hero from "./components/Hero/Hero";
+import { Tvshows } from "./components/Tvshows";
+
+const trendingTVShows = [
+  { id: 1,  image: "/public/Shows/01.jpg" },
+  { id: 2, image: "/public/Shows/02.jpg" },
+  { id: 3, image: "/public/Shows/03.jpg" },
+  { id: 4, image: "/public/Shows/04.jpg" },
+  { id: 5, image: "/public/Shows/05.jpg" },
+  { id: 6, image: "/public/Shows/06.jpg" },
+  { id: 7, image: "/public/Shows/07.jpg" },
+];
+const trendingMovies = [
+  { id: 8, image: "/public/Shows/08.jpg" },
+  { id: 9, image: "/public/Shows/09.jpg" },
+  { id: 10, image: "/public/Shows/10.jpg" },
+  { id: 11, image: "/public/Shows/11.jpg" },
+  { id: 12, image: "/public/Shows/12.jpg" },
+  { id: 13, image: "/public/Shows/10.jpg" },
+  { id: 14, image: "/public/Shows/08.jpg" },
+];
 function App() {
   return (
-    <div className="App">
+    <Router>
       <Header />
       <main className="pt-14">
-        <Hero />
-        <h1>Welcome to the React App</h1>
-        <p>This is a simple application to demonstrate component structure.</p>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Tvshows title="Trending TV Shows" items={trendingTVShows} />
+                <Tvshows title="Trending Movies" items={trendingMovies} />
+              </>
+            }
+          />
+          <Route path="/movie/:id" element={<MoviePage />} />
+        </Routes>
       </main>
-    </div>
+    </Router>
   );
 }
 

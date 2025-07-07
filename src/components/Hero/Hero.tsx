@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import image from "/Hero_img.webp";
+import image from "/Hero_img.jpg"; 
 import "./style.css"; // Assuming you have some styles in Hero.css
 const MovieCard: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,9 +16,8 @@ const MovieCard: React.FC = () => {
   }, [isOpen]);
 
   return (
-    <section className="mx-auto px-4 overflow-hidden border-b border-gray-200">
+    <section id="home" className="mx-auto px-4 overflow-hidden border-b border-gray-200">
       <div className="xl:flex items-center text-white pt-8">
-        {/* Текст зліва */}
         <div className="xl:flex-[0_0_50%] 2xl:pl-16 lg:mb-0 mb-7 z-20">
           <div className="mb-4">
             <div className="xl:w-[80%]">

@@ -93,9 +93,9 @@ export const Header = () => {
   const activeId = useScrollSpy(sections, 100);
 
   return (
-    <header className="fixed left-0 w-full bg-[#000] shadow-md z-20">
+    <header className="fixed left-0 w-full bg-[#000] shadow-md z-50">
       <div className="flex justify-between items-center xl:px-16 px-5 py-3 relative">
-        <a href="#home">
+        <a href="/">
           <img className="xl:w-full w-[50%]" src="/Logo.svg" alt="Logo" />
         </a>
         <div
