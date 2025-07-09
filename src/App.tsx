@@ -2,14 +2,15 @@
 // import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { MoviePage } from "./pages/MoviePage";
-
-import "./index.css";
 import { Header } from "./components/layout/header";
 import Hero from "./components/Hero/Hero";
 import { Tvshows } from "./components/Tvshows";
+import { PopularGenres } from "./components/PopularGenres";
+import { PopularPeople } from "./components/PopularPeople";
+import "./index.css";
 
 const trendingTVShows = [
-  { id: 1,  image: "/Shows/01.jpg" },
+  { id: 1, image: "/Shows/01.jpg" },
   { id: 2, image: "/Shows/02.jpg" },
   { id: 3, image: "/Shows/03.jpg" },
   { id: 4, image: "/Shows/04.jpg" },
@@ -39,6 +40,8 @@ function App() {
                 <Hero />
                 <Tvshows title="Trending TV Shows" items={trendingTVShows} />
                 <Tvshows title="Trending Movies" items={trendingMovies} />
+                <PopularGenres />
+                {/* <PopularPeople /> */}
               </>
             }
           />
