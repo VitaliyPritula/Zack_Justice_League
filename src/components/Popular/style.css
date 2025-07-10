@@ -1,0 +1,10 @@
+
+.gradient-border {
+  border: 2px solid transparent;
+  border-radius: 9999px;
+  background:
+    linear-gradient(#18181b, #18181b) padding-box,
+    linear-gradient(90deg, #326cff, #26fff2) border-box;
+  display: inline-block;
+
+}

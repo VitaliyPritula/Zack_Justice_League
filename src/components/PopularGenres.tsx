@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const PopularGenres = () => {
   return (
     <section>
-      <div className="mx-auto 2xl:pl-20 pl-4">
+      <div className="mx-auto 2xl:pl-20 pl-4 mb-[70px]">
         <h2 className="text-white mb-7 text-md relative font-semibold before:absolute before:top-1/2 before:left-0 before:w-[9px] before:h-[20px] before:bg-gradient-to-r before:from-[#326cff] before:via-[#26FFF2] before:rounded-2xl before:-translate-y-1/2 pl-3">
           <Link to="/tvshows" className="flex items-center gap-2">
             Popular Genres

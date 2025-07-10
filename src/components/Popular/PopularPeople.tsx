@@ -1,17 +1,13 @@
 import { Link } from "react-router-dom";
-
-type MediaSectionProps = {
-  title: string;
-  items: { id: number; title: string; text: string; image: string }[];
-};
-
-export const Tvshows = ({ title, items }: MediaSectionProps) => {
+import { popularPeople } from "../data/popularPeople";
+import "./style.css";
+export const PopularPeople = () => {
   return (
-    <section  id="tvshows" className="py-[60px]">
-      <div className="mx-auto 2xl:px-20 px-4">
+    <section className="">
+      <div className="text-white mx-auto 2xl:px-20 px-4 pt-[70px] pb-[60px]">
         <h2 className="text-white mb-7 text-md relative font-semibold before:absolute before:top-1/2 before:left-0 before:w-[9px] before:h-[20px] before:bg-gradient-to-r before:from-[#326cff] before:via-[#26FFF2] before:rounded-2xl before:-translate-y-1/2 pl-3">
-          <Link to="/tvshows" className="flex items-center gap-2">
-            {title}
+          <Link to="" className="flex items-center gap-2">
+            Popular Actors & Directors
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -27,19 +23,18 @@ export const Tvshows = ({ title, items }: MediaSectionProps) => {
             </svg>
           </Link>
         </h2>
-        <div className="flex overflow-x-auto scroll-smooth gap-11 scrollbar-hidden">
-          {items.map((item) => (
+        <div className="flex xl:gap-x-20 lg:gap-x-2 overflow-auto scroll-smooth scrollbar-hidden snap-x snap-mandatory">
+          {popularPeople.map((item) => (
             <Link
-              to={`/movie/${item.id}`}
+              to={item.url}
               key={item.id}
-              className="flex-shrink-0 items-center flex flex-col">
+              className="text-center flex flex-col items-center 2xl:flex-[0_0_12%] xl:flex-[0_0_20%] lg:flex-[0_0_28%] md2:flex-[0_0_28%] md1:flex-[0_0_44%] flex-[0_0_50%]  transform translate-x-9 snap-start">
               <img
                 src={item.image}
-                className="rounded-[20px] w-full h-auto object-cover shadow-md"
+                alt={item.name}
+                className="w-[100%] rounded-full shadow-md"
               />
-              <h3 className="text-white text-md font-mulish font-bold mt-2">
-                {item.text}
-              </h3>
+              <p className="text-white mt-2 text-sm">{item.name}</p>
             </Link>
           ))}
         </div>

@@ -1,13 +1,13 @@
 "use strict";
 // import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { MoviePage } from "./pages/MoviePage";
-import { Header } from "./components/layout/header";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
-import { Tvshows } from "./components/Tvshows";
+import { Header } from "./components/layout/header";
+import { PopularPeople } from "./components/Popular/PopularPeople";
 import { PopularGenres } from "./components/PopularGenres";
-import { PopularPeople } from "./components/PopularPeople";
+import { Tvshows } from "./components/Tvshows";
 import "./index.css";
+import { MoviePage } from "./pages/MoviePage";
 
 const trendingTVShows = [
   { id: 1, image: "/Shows/01.jpg" },
@@ -27,6 +27,7 @@ const trendingMovies = [
   { id: 13, image: "/Shows/10.jpg" },
   { id: 14, image: "/Shows/08.jpg" },
 ];
+
 function App() {
   return (
     <Router>
@@ -41,7 +42,7 @@ function App() {
                 <Tvshows title="Trending TV Shows" items={trendingTVShows} />
                 <Tvshows title="Trending Movies" items={trendingMovies} />
                 <PopularGenres />
-                {/* <PopularPeople /> */}
+                <PopularPeople />
               </>
             }
           />

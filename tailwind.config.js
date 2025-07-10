@@ -53,6 +53,7 @@ export default {
         // => @media (min-width: 320px) { ... }
         md: "375px",
         md1: "540px",
+        md2: "620px",
         // => @media (min-width: 375px) { ... }
         lg: "768px",
         // => @media (min-width: 768px) { ... }
