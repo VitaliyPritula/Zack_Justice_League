@@ -34,27 +34,29 @@ const trendingMovies = [
 function App() {
   return (
     <Router>
-      <Header />
-      <main className="pt-14">
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Hero />
-                <Tvshows title="Trending TV Shows" items={trendingTVShows} />
-                <Tvshows title="Trending Movies" items={trendingMovies} />
-                <PopularGenres />
-                <PopularPeople />
-                <BibgBuck />
-                <ComingSoon/>
-              </>
-            }
-          />
-          <Route path="/movie/:id" element={<MoviePage />} />
-        </Routes>
-      </main>
-      <Footer/>
+      <div className="min-h-screen flex flex-col">
+        <Header />
+        <main className="pt-14 flex-[1_1_auto]">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Hero />
+                  <Tvshows title="Trending TV Shows" items={trendingTVShows} />
+                  <Tvshows title="Trending Movies" items={trendingMovies} />
+                  <PopularGenres />
+                  <PopularPeople />
+                  <BibgBuck />
+                  <ComingSoon />
+                </>
+              }
+            />
+            <Route path="/movie/:id" element={<MoviePage />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </Router>
   );
 }
