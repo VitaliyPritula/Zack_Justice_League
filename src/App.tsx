@@ -8,6 +8,9 @@ import { PopularGenres } from "./components/PopularGenres";
 import { Tvshows } from "./components/Tvshows";
 import "./index.css";
 import { MoviePage } from "./pages/MoviePage";
+import BibgBuck from "./components/BivgBuck";
+import ComingSoon from "./components/ComingSoon";
+import { Footer } from "./components/layout/footer";
 
 const trendingTVShows = [
   { id: 1, image: "/Shows/01.jpg" },
@@ -43,12 +46,15 @@ function App() {
                 <Tvshows title="Trending Movies" items={trendingMovies} />
                 <PopularGenres />
                 <PopularPeople />
+                <BibgBuck />
+                <ComingSoon/>
               </>
             }
           />
           <Route path="/movie/:id" element={<MoviePage />} />
         </Routes>
       </main>
+      <Footer/>
     </Router>
   );
 }
