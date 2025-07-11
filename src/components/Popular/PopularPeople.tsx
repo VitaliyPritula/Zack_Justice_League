@@ -3,7 +3,7 @@ import { popularPeople } from "../data/popularPeople";
 import "./style.css";
 export const PopularPeople = () => {
   return (
-    <section className="">
+    <section className="overflow-hidden">
       <div className="text-white mx-auto 2xl:px-20 px-4 pt-[70px] pb-[60px]">
         <h2 className="text-white mb-7 text-md relative font-semibold before:absolute before:top-1/2 before:left-0 before:w-[9px] before:h-[20px] before:bg-gradient-to-r before:from-[#326cff] before:via-[#26FFF2] before:rounded-2xl before:-translate-y-1/2 pl-3">
           <Link to="" className="flex items-center gap-2">
@@ -23,12 +23,12 @@ export const PopularPeople = () => {
             </svg>
           </Link>
         </h2>
-        <div className="flex xl:gap-x-20 lg:gap-x-2 overflow-auto scroll-smooth scrollbar-hidden snap-x snap-mandatory">
+        <div className="flex xl:gap-x-20 lg:gap-x-2 overflow-x-scroll scroll-smooth scrollbar-hidden snap-x snap-mandatory">
           {popularPeople.map((item) => (
             <Link
               to={item.url}
               key={item.id}
-              className="text-center flex flex-col items-center 2xl:flex-[0_0_12%] xl:flex-[0_0_20%] lg:flex-[0_0_28%] md2:flex-[0_0_28%] md1:flex-[0_0_44%] flex-[0_0_50%]  transform translate-x-9 snap-start">
+              className="text-center flex flex-col items-center 2xl:flex-[0_0_12%] xl:flex-[0_0_20%] lg:flex-[0_0_28%] md2:flex-[0_0_28%] md1:flex-[0_0_44%] flex-[0_0_35%]">
               <img
                 src={item.image}
                 alt={item.name}

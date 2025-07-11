@@ -3,7 +3,7 @@ import React, {useState} from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import { Header } from "./components/layout/header";
-// import { PopularPeople } from "./components/Popular/PopularPeople";
+import { PopularPeople } from "./components/Popular/PopularPeople";
 import { PopularGenres } from "./components/PopularGenres";
 import { Tvshows } from "./components/Tvshows";
 import "./index.css";
@@ -52,7 +52,7 @@ function App() {
                   <Tvshows title="Trending TV Shows" items={trendingTVShows} />
                   <Tvshows title="Trending Movies" items={trendingMovies} />
                   <PopularGenres />
-                  {/* <PopularPeople /> */}
+                  <PopularPeople />
                   <BibgBuck />
                   <ComingSoon onRegisterClick={openPopup} />
                   <Register isOpen={isPopupOpen} onClose={closePopup} />
