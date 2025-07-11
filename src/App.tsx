@@ -1,5 +1,5 @@
 "use strict";
-// import React from "react";
+import React, {useState} from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import { Header } from "./components/layout/header";
@@ -10,6 +10,7 @@ import "./index.css";
 import { MoviePage } from "./pages/MoviePage";
 import BibgBuck from "./components/BivgBuck";
 import ComingSoon from "./components/ComingSoon";
+import Register from "./components/Register";
 import { Footer } from "./components/layout/footer";
 
 const trendingTVShows = [
@@ -32,9 +33,14 @@ const trendingMovies = [
 ];
 
 function App() {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const openPopup = () => setIsPopupOpen(true);
+  const closePopup = () => setIsPopupOpen(false);
+
   return (
     <Router>
-      <div className="min-h-screen flex flex-col">
+      <div className="">
         <Header />
         <main className="pt-14 flex-[1_1_auto]">
           <Routes>
@@ -48,7 +54,8 @@ function App() {
                   <PopularGenres />
                   <PopularPeople />
                   <BibgBuck />
-                  <ComingSoon />
+                  <ComingSoon onRegisterClick={openPopup} />
+                  <Register isOpen={isPopupOpen} onClose={closePopup} />
                 </>
               }
             />
